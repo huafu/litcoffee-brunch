@@ -1,0 +1,24 @@
+{
+  "name": "litcoffee-brunch",
+  "version": "1.5.0",
+  "description": "Handles litearate CoffeeScript files compilation and generate documentation for them in a brunch project.",
+  "author": "Huafu Gandon (huafu.gandon@gmail.com)",
+  "homepage": "https://github.com/huafu/litcoffee-brunch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:huafu/litcoffee-brunch.git"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "rm -rf lib && coffee --bare --output lib/ src/",
+    "test": "node_modules/.bin/mocha --compilers coffee:coffee-script --require test/common.js"
+  },
+  "dependencies": {
+    "coffee-script": ">= 1.6.0",
+    "docco": "0.6.2"
+  },
+  "devDependencies": {
+    "mocha": "1.8.1",
+    "chai": "1.4.2"
+  }
+}
