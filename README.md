@@ -1,3 +1,9 @@
+----
+
+This package is now obsolete, a PR has been merged into `coffee-script-brunch` to handle the `.litcoffee` and `.coffee.md` file extenstions and so the literate version of CoffeeScript
+
+----
+
 ## litcoffee-brunch
 Adds [literate CoffeeScript](http://coffeescript.org/#literate)
 support to [brunch](http://brunch.io).
